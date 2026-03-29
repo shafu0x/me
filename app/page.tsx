@@ -37,6 +37,8 @@ export default function Home() {
         <b>EnBW Energie</b> - ML engineer (2019-2021, Karlsruhe)
         <br />
         <b>vialytics</b> - ML engineer (2019, Stuttgart)
+        <br />
+        <b>IOT GmbH</b> - SAP developer (2016, Gelsenkirchen)
       </div>
 
       <div className="section">
@@ -162,7 +164,7 @@ export default function Home() {
         <b>education</b>
         <br />
         <br />
-        University of T&uuml;bingen - Master, Machine Learning (2018-2019)
+        University of T&uuml;bingen - Master, Machine Learning (2018-2019, dropped out)
         <br />
         Westf&auml;lische Hochschule - B.Sc., Computer Science (2014-2017)
       </div>
