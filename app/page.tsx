@@ -32,13 +32,13 @@ export default function Home() {
         <br />
         <b>DYAD</b> - smart contract engineer
         <br />
-        <b>SMARTeFunding / eProgramming</b> - co-founder (2021-2023, Germany)
+        <b>SMARTeFunding / eProgramming</b> - co-founder (Germany)
         <br />
-        <b>EnBW Energie</b> - ML engineer (2019-2021, Karlsruhe)
+        <b>EnBW Energie</b> - ML engineer (Karlsruhe)
         <br />
-        <b>vialytics</b> - ML engineer (2019, Stuttgart)
+        <b>vialytics</b> - ML engineer (Stuttgart)
         <br />
-        <b>IOT GmbH</b> - SAP developer (2016, Gelsenkirchen)
+        <b>IOT GmbH</b> - SAP developer (Gelsenkirchen)
       </div>
 
       <div className="section">
