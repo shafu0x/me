@@ -90,12 +90,11 @@ export default function Home() {
         <br />
         <br />
         <div className="video-grid">
-          <a href="https://www.youtube.com/watch?v=KjQS_Odg-Co">
+          <a href="https://www.youtube.com/watch?v=59zV1k8CO1g">
             <img
-              src="https://i.ytimg.com/vi/KjQS_Odg-Co/sddefault.jpg"
-              alt="Push & Pop 61 - Ekubo"
+              src="https://i.ytimg.com/vi/59zV1k8CO1g/sddefault.jpg"
+              alt="Push & Pop"
             />
-            Push &amp; Pop 61 - philogy &amp; Moody - Ekubo
           </a>
         </div>
       </div>
@@ -111,42 +110,25 @@ export default function Home() {
         </a>{" "}
         - the best smart contracts in one place
         <br />
+        <a href="https://github.com/Merit-Systems/x402scan">x402scan</a> -
+        x402 ecosystem explorer
+        <br />
         <a href="https://github.com/shafu0x/evm-from-scratch-book">
           evm-from-scratch-book
         </a>{" "}
-        - book: build the EVM from scratch &mdash;{" "}
-        <a href="https://evm-from-scratch.xyz">evm-from-scratch.xyz</a>
+        - build the EVM from scratch &mdash;{" "}
+        <a href="https://www.evm-from-scratch.app">evm-from-scratch.app</a>
         <br />
-        <a href="https://github.com/shafu0x/evm-from-scratch">
-          evm-from-scratch
-        </a>{" "}
-        - EVM implementation (code companion)
-        <br />
-        <a href="https://github.com/shafu0x/huff-stacker">huff-stacker</a> -
-        auto-generate stack comments for Huff macros (Rust)
-        <br />
-        <a href="https://github.com/shafu0x/huff-fmt">huff-fmt</a> - Huff
-        formatter (Rust)
-        <br />
-        <a href="https://github.com/shafu0x/contract-vis">contract-vis</a> -
-        smart contract visualizer
-        <br />
-        <a href="https://github.com/shafu0x/blockchain-from-scratch">
-          blockchain-from-scratch
-        </a>{" "}
-        - blockchain in pure Python
-        <br />
-        <a href="https://github.com/shafu0x/microstaking">MicroStaking</a>
+        <a href="https://github.com/shafu0x/MicroStable">MicroStable</a> -
+        most simple design of a stablecoin
         <br />
         <a href="https://github.com/shafu0x/vehicle-speed-estimation">
           vehicle-speed-estimation
         </a>{" "}
         - vehicle speed from video using deep learning
         <br />
-        <a href="https://github.com/shafu0x/opical-flow-estimation-with-RAFT">
-          optical-flow-RAFT
-        </a>{" "}
-        - optical flow with PyTorch
+        <a href="https://github.com/shafu0x/huff-stacker">huff-stacker</a> -
+        auto-generate stack comments for Huff macros
       </div>
 
 
