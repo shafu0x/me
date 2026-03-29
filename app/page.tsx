@@ -1,65 +1,190 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <main>
+      <div className="section">
+        <img src="/pfp.jpg" alt="shafu" width={120} height={120} style={{ imageRendering: "pixelated" }} />
+      </div>
+
+      <div className="section">
+        I&apos;m shafu (Sharif Elfouly). founding engineer at{" "}
+        <a href="https://merit.systems">Merit Systems</a>. previously machine
+        learning engineer. built Smart Contracts securing $1B+.
+      </div>
+
+      <div className="section">
+        find me on{" "}
+        <a href="https://x.com/shafu0x">twitter</a>,{" "}
+        <a href="https://github.com/shafu0x">github</a>,{" "}
+        <a href="https://linkedin.com/in/sharif-elfouly-975146142">linkedin</a>,{" "}
+        <a href="mailto:shafu0x@gmail.com">shafu0x@gmail.com</a>
+      </div>
+
+
+      <div className="section">
+        ---
+        <br />
+        <b>work</b>
+        <br />
+        <br />
+        <b>Merit Systems</b> - founding engineer (2025-present, NYC)
+        <br />
+        <b>Venice AI</b> - smart contract engineer
+        <br />
+        <b>DYAD</b> - smart contract engineer
+        <br />
+        <b>SMARTeFunding / eProgramming</b> - co-founder (2021-2023, Germany)
+        <br />
+        <b>EnBW Energie</b> - ML engineer (2019-2021, Karlsruhe)
+        <br />
+        <b>vialytics</b> - ML engineer (2019, Stuttgart)
+      </div>
+
+      <div className="section">
+        ---
+        <br />
+        <b>talks &amp; podcasts</b>
+        <br />
+        <br />
+        <div className="video-grid">
+          <a href="https://www.youtube.com/watch?v=KQG-ouMf-ho">
+            <img
+              src="https://i.ytimg.com/vi/KQG-ouMf-ho/sddefault.jpg"
+              alt="x402scan: The discovery layer for x402"
             />
-            Deploy Now
+            x402scan: The discovery layer for x402 (Agentic Zero keynote)
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="https://www.youtube.com/watch?v=ATkN_eHjehM">
+            <img
+              src="https://i.ytimg.com/vi/ATkN_eHjehM/maxresdefault.jpg"
+              alt="x402, ERC-8004 and Co"
+            />
+            x402, ERC-8004 and Co (Agents Unleashed Buenos Aires)
+          </a>
+          <a href="https://www.youtube.com/watch?v=p3-xWjJ3qZ8">
+            <img
+              src="https://i.ytimg.com/vi/p3-xWjJ3qZ8/sddefault.jpg"
+              alt="The Signal Podcast"
+            />
+            The Signal Podcast: x402 Scan MCP (Edge &amp; Node)
+          </a>
+          <a href="https://www.youtube.com/watch?v=ByBjY05Xl6U">
+            <img
+              src="https://i.ytimg.com/vi/ByBjY05Xl6U/sddefault.jpg"
+              alt="Agentic payments are the new normal"
+            />
+            Agentic payments are the new normal (Openfort)
           </a>
         </div>
-      </main>
-    </div>
+      </div>
+
+      <div className="section">
+        ---
+        <br />
+        <b>Push &amp; Pop</b> - my show on smart contract deep-dives
+        <br />
+        <a href="https://www.youtube.com/@shafu0x">youtube.com/@shafu0x</a>
+        <br />
+        <br />
+        61+ episodes. protocol internals: Ekubo, Maple, Merit, Sablier V2, and
+        more.
+        <br />
+        <br />
+        <div className="video-grid">
+          <a href="https://www.youtube.com/watch?v=KjQS_Odg-Co">
+            <img
+              src="https://i.ytimg.com/vi/KjQS_Odg-Co/sddefault.jpg"
+              alt="Push & Pop 61 - Ekubo"
+            />
+            Push &amp; Pop 61 - philogy &amp; Moody - Ekubo
+          </a>
+        </div>
+      </div>
+
+      <div className="section">
+        ---
+        <br />
+        <b>open source</b>
+        <br />
+        <br />
+        <a href="https://github.com/shafu0x/awesome-smart-contracts">
+          awesome-smart-contracts
+        </a>{" "}
+        - the best smart contracts in one place
+        <br />
+        <a href="https://github.com/shafu0x/evm-from-scratch-book">
+          evm-from-scratch-book
+        </a>{" "}
+        - book: build the EVM from scratch &mdash;{" "}
+        <a href="https://evm-from-scratch.xyz">evm-from-scratch.xyz</a>
+        <br />
+        <a href="https://github.com/shafu0x/evm-from-scratch">
+          evm-from-scratch
+        </a>{" "}
+        - EVM implementation (code companion)
+        <br />
+        <a href="https://github.com/shafu0x/huff-stacker">huff-stacker</a> -
+        auto-generate stack comments for Huff macros (Rust)
+        <br />
+        <a href="https://github.com/shafu0x/huff-fmt">huff-fmt</a> - Huff
+        formatter (Rust)
+        <br />
+        <a href="https://github.com/shafu0x/contract-vis">contract-vis</a> -
+        smart contract visualizer
+        <br />
+        <a href="https://github.com/shafu0x/blockchain-from-scratch">
+          blockchain-from-scratch
+        </a>{" "}
+        - blockchain in pure Python
+        <br />
+        <a href="https://github.com/shafu0x/microstaking">MicroStaking</a>
+        <br />
+        <a href="https://github.com/shafu0x/vehicle-speed-estimation">
+          vehicle-speed-estimation
+        </a>{" "}
+        - vehicle speed from video using deep learning
+        <br />
+        <a href="https://github.com/shafu0x/opical-flow-estimation-with-RAFT">
+          optical-flow-RAFT
+        </a>{" "}
+        - optical flow with PyTorch
+      </div>
+
+
+      <div className="section">
+        ---
+        <br />
+        <b>press</b>
+        <br />
+        <br />
+        <a href="https://www.inverse.com/the-smart-contract-engineer-building-open-sources-financial-future">
+          &quot;The Smart Contract Engineer Building Open Source&apos;s Financial
+          Future&quot;
+        </a>{" "}
+        &mdash; Inverse (2025)
+        <br />
+        <a href="https://www.villagevoice.com/sharif-elfouly-explains-why-tokenization-isnt-a-tech-problem/">
+          &quot;Why Tokenization Isn&apos;t a Tech Problem&quot;
+        </a>{" "}
+        &mdash; Village Voice (2025)
+        <br />
+        <a href="https://www.devx.com/enterprise-zone/smart-contracts/">
+          &quot;Code That Holds Millions: Philosophy for Smart Contracts That
+          Survive&quot;
+        </a>{" "}
+        &mdash; DevX (2025)
+      </div>
+
+      <div className="section">
+        ---
+        <br />
+        <b>education</b>
+        <br />
+        <br />
+        University of T&uuml;bingen - Master, Machine Learning (2018-2019)
+        <br />
+        Westf&auml;lische Hochschule - B.Sc., Computer Science (2014-2017)
+      </div>
+
+    </main>
   );
 }
