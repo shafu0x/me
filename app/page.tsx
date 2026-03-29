@@ -37,6 +37,8 @@ export default function Home() {
         <b>EnBW Energie</b> - ML engineer (2019-2021, Karlsruhe)
         <br />
         <b>vialytics</b> - ML engineer (2019, Stuttgart)
+        <br />
+        <b>IOT GmbH</b> - SAP developer (2016, Gelsenkirchen)
       </div>
 
       <div className="section">
