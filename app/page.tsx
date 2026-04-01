@@ -76,6 +76,13 @@ export default function Home() {
             />
             Agentic payments are the new normal (Openfort)
           </a>
+          <a href="https://x.com/cryptosmiff/status/2039446564784263651">
+            <img
+              src="/cryptosmiff.png"
+              alt="Agentic payments might be bigger than DeFi"
+            />
+            Agentic payments might be bigger than DeFi (cryptosmiff)
+          </a>
         </div>
       </div>
 
