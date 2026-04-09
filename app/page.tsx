@@ -1,13 +1,14 @@
 export default function Home() {
   return (
     <main>
-      <div className="section">
+      <div className="section" style={{ display: "flex", gap: "16px", alignItems: "center" }}>
         <img src="/pfp.jpg" alt="shafu" width={120} height={120} style={{ imageRendering: "pixelated" }} />
+        <img src="/speaking.png" alt="shafu speaking" width={120} height={120} style={{ objectFit: "cover", borderRadius: "4px" }} />
       </div>
 
       <div className="section">
         I&apos;m shafu (Sharif Elfouly). founding engineer at{" "}
-        <a href="https://merit.systems">Merit Systems</a>. previously machine
+        <a href="https://merit.systems">Merit Systems</a> in NY. previously machine
         learning engineer. built Smart Contracts securing $1B+.
       </div>
 
@@ -16,7 +17,7 @@ export default function Home() {
         <a href="https://x.com/shafu0x">twitter</a>,{" "}
         <a href="https://github.com/shafu0x">github</a>,{" "}
         <a href="https://linkedin.com/in/sharif-elfouly-975146142">linkedin</a>,{" "}
-        <a href="mailto:shafu0x@gmail.com">shafu0x@gmail.com</a>
+        <a href="mailto:shafu@merit.systems">shafu@merit.systems</a>
       </div>
 
 
@@ -26,7 +27,7 @@ export default function Home() {
         <b>work</b>
         <br />
         <br />
-        <b>Merit Systems</b> - founding engineer (2025-present, NYC)
+        <b>Merit Systems</b> - founding engineer (NYC)
         <br />
         <b>Venice AI</b> - smart contract engineer
         <br />
