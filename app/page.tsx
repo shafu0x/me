@@ -76,6 +76,13 @@ export default function Home() {
             />
             Agentic payments are the new normal (Openfort)
           </a>
+          <a href="https://www.youtube.com/watch?v=zW2u-fRo_ek">
+            <img
+              src="https://i.ytimg.com/vi/zW2u-fRo_ek/sddefault.jpg"
+              alt="x402 explained (payments unlock agents)"
+            />
+            x402 explained: payments unlock agents (Keeping Up with the Builders)
+          </a>
           <a href="https://x.com/cryptosmiff/status/2039446564784263651">
             <img
               src="/cryptosmiff.png"
