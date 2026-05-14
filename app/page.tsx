@@ -48,6 +48,14 @@ export default function Home() {
         <br />
         <br />
         <div className="video-grid">
+          <a href="https://www.youtube.com/watch?v=vVmyBfGqM7Q&t=3s">
+            <img
+              src="https://i.ytimg.com/vi/vVmyBfGqM7Q/hqdefault.jpg"
+              alt="Autonomous Agentic Commerce: Micropayments, AgentCash, x402 & MPP"
+            />
+            Autonomous Agentic Commerce: Micropayments, AgentCash, x402 &amp; MPP
+            (Shoal Signal)
+          </a>
           <a href="https://www.youtube.com/watch?v=KQG-ouMf-ho">
             <img
               src="https://i.ytimg.com/vi/KQG-ouMf-ho/sddefault.jpg"
