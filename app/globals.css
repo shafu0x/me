@@ -25,6 +25,16 @@ a:hover {
   margin-bottom: 1.5em;
 }
 
+.profile-images {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.profile-photo {
+  object-fit: cover;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
