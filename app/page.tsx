@@ -104,16 +104,6 @@ export default function Home() {
         <br />
         61+ episodes. protocol internals: Ekubo, Maple, Merit, Sablier V2, and
         more.
-        <br />
-        <br />
-        <div className="video-grid">
-          <a href="https://www.youtube.com/watch?v=59zV1k8CO1g">
-            <img
-              src="https://i.ytimg.com/vi/59zV1k8CO1g/sddefault.jpg"
-              alt="Push & Pop"
-            />
-          </a>
-        </div>
       </div>
 
       <div className="section">
