@@ -2,7 +2,22 @@ export default function Home() {
   return (
     <main>
       <div className="section">
-        <img src="/pfp.jpg" alt="shafu" width={120} height={120} style={{ imageRendering: "pixelated" }} />
+        <div className="profile-images">
+          <img
+            src="/pfp.jpg"
+            alt="shafu"
+            width={120}
+            height={120}
+            style={{ imageRendering: "pixelated" }}
+          />
+          <img
+            src="/speaking.png"
+            alt="Sharif speaking on stage"
+            width={120}
+            height={120}
+            className="profile-photo"
+          />
+        </div>
       </div>
 
       <div className="section">
