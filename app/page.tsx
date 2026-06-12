@@ -113,6 +113,13 @@ export default function Home() {
             />
             Agentic payments might be bigger than DeFi (cryptosmiff)
           </a>
+          <a href="https://slop.computer/shafu0x">
+            <img
+              src="/slop-computer-shafu0x.png"
+              alt="Slop Computer episode with shafu0x"
+            />
+            Slop Computer: shafu0x
+          </a>
         </div>
       </div>
 
