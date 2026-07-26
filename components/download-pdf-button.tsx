@@ -40,13 +40,13 @@ export function DownloadPdfButton() {
     <div className="section">
       <button
         type="button"
-        className="download-pdf"
+        className="cursor-pointer border-0 bg-transparent p-0 font-[inherit] text-[length:inherit] text-[#0000ee] underline hover:text-black disabled:cursor-wait disabled:text-[#666]"
         onClick={handleDownload}
         disabled={loading}
       >
         Download PDF
       </button>
-      {error && <span className="download-pdf-error"> {error}</span>}
+      {error && <span className="text-[#c00]"> {error}</span>}
     </div>
   );
 }
