@@ -1,6 +1,10 @@
+import { DownloadPdfButton } from "@/components/download-pdf-button";
+
 export default function Home() {
   return (
-    <main>
+    <>
+      <DownloadPdfButton />
+      <main id="resume-content">
       <div className="section">
         <div className="profile-images">
           <img
@@ -8,6 +12,7 @@ export default function Home() {
             alt="shafu"
             width={120}
             height={120}
+            crossOrigin="anonymous"
             style={{ imageRendering: "pixelated" }}
           />
           <img
@@ -15,6 +20,7 @@ export default function Home() {
             alt="Sharif speaking on stage"
             width={120}
             height={120}
+            crossOrigin="anonymous"
             className="profile-photo"
           />
         </div>
@@ -27,13 +33,11 @@ export default function Home() {
       </div>
 
       <div className="section">
-        find me on{" "}
-        <a href="https://x.com/shafu0x">twitter</a>,{" "}
+        find me on <a href="https://x.com/shafu0x">twitter</a>,{" "}
         <a href="https://github.com/shafu0x">github</a>,{" "}
         <a href="https://linkedin.com/in/sharif-elfouly-975146142">linkedin</a>,{" "}
         <a href="mailto:shafu0x@gmail.com">shafu0x@gmail.com</a>
       </div>
-
 
       <div className="section">
         ---
@@ -67,14 +71,16 @@ export default function Home() {
             <img
               src="https://i.ytimg.com/vi/vVmyBfGqM7Q/hqdefault.jpg"
               alt="Autonomous Agentic Commerce: Micropayments, AgentCash, x402 & MPP"
+              crossOrigin="anonymous"
             />
-            Autonomous Agentic Commerce: Micropayments, AgentCash, x402 &amp; MPP
-            (Shoal Signal)
+            Autonomous Agentic Commerce: Micropayments, AgentCash, x402 &amp;
+            MPP (Shoal Signal)
           </a>
           <a href="https://www.youtube.com/watch?v=KQG-ouMf-ho">
             <img
               src="https://i.ytimg.com/vi/KQG-ouMf-ho/sddefault.jpg"
               alt="x402scan: The discovery layer for x402"
+              crossOrigin="anonymous"
             />
             x402scan: The discovery layer for x402 (Agentic Zero keynote)
           </a>
@@ -82,6 +88,7 @@ export default function Home() {
             <img
               src="https://i.ytimg.com/vi/ATkN_eHjehM/maxresdefault.jpg"
               alt="x402, ERC-8004 and Co"
+              crossOrigin="anonymous"
             />
             x402, ERC-8004 and Co (Agents Unleashed Buenos Aires)
           </a>
@@ -89,6 +96,7 @@ export default function Home() {
             <img
               src="https://i.ytimg.com/vi/p3-xWjJ3qZ8/sddefault.jpg"
               alt="The Signal Podcast"
+              crossOrigin="anonymous"
             />
             The Signal Podcast: x402 Scan MCP (Edge &amp; Node)
           </a>
@@ -96,6 +104,7 @@ export default function Home() {
             <img
               src="https://i.ytimg.com/vi/ByBjY05Xl6U/sddefault.jpg"
               alt="Agentic payments are the new normal"
+              crossOrigin="anonymous"
             />
             Agentic payments are the new normal (Openfort)
           </a>
@@ -103,13 +112,16 @@ export default function Home() {
             <img
               src="https://i.ytimg.com/vi/zW2u-fRo_ek/sddefault.jpg"
               alt="x402 explained (payments unlock agents)"
+              crossOrigin="anonymous"
             />
-            x402 explained: payments unlock agents (Keeping Up with the Builders)
+            x402 explained: payments unlock agents (Keeping Up with the
+            Builders)
           </a>
           <a href="https://x.com/cryptosmiff/status/2039446564784263651">
             <img
               src="/cryptosmiff.png"
               alt="Agentic payments might be bigger than DeFi"
+              crossOrigin="anonymous"
             />
             Agentic payments might be bigger than DeFi (cryptosmiff)
           </a>
@@ -117,6 +129,7 @@ export default function Home() {
             <img
               src="/slop-computer-shafu0x.png"
               alt="Slop Computer episode with shafu0x"
+              crossOrigin="anonymous"
             />
             Slop Computer: shafu0x
           </a>
@@ -146,8 +159,8 @@ export default function Home() {
         </a>{" "}
         - the best smart contracts in one place
         <br />
-        <a href="https://github.com/Merit-Systems/x402scan">x402scan</a> -
-        x402 ecosystem explorer
+        <a href="https://github.com/Merit-Systems/x402scan">x402scan</a> - x402
+        ecosystem explorer
         <br />
         <a href="https://github.com/shafu0x/evm-from-scratch-book">
           evm-from-scratch-book
@@ -155,8 +168,8 @@ export default function Home() {
         - build the EVM from scratch &mdash;{" "}
         <a href="https://www.evm-from-scratch.app">evm-from-scratch.app</a>
         <br />
-        <a href="https://github.com/shafu0x/MicroStable">MicroStable</a> -
-        most simple design of a stablecoin
+        <a href="https://github.com/shafu0x/MicroStable">MicroStable</a> - most
+        simple design of a stablecoin
         <br />
         <a href="https://github.com/shafu0x/vehicle-speed-estimation">
           vehicle-speed-estimation
@@ -167,7 +180,6 @@ export default function Home() {
         auto-generate stack comments for Huff macros
       </div>
 
-
       <div className="section">
         ---
         <br />
@@ -175,8 +187,8 @@ export default function Home() {
         <br />
         <br />
         <a href="https://www.inverse.com/the-smart-contract-engineer-building-open-sources-financial-future">
-          &quot;The Smart Contract Engineer Building Open Source&apos;s Financial
-          Future&quot;
+          &quot;The Smart Contract Engineer Building Open Source&apos;s
+          Financial Future&quot;
         </a>{" "}
         &mdash; Inverse (2025)
         <br />
@@ -198,11 +210,12 @@ export default function Home() {
         <b>education</b>
         <br />
         <br />
-        University of T&uuml;bingen - Master, Machine Learning (2018-2019, dropped out)
+        University of T&uuml;bingen - Master, Machine Learning (2018-2019,
+        dropped out)
         <br />
         Westf&auml;lische Hochschule - B.Sc., Computer Science (2014-2017)
       </div>
-
     </main>
+    </>
   );
 }

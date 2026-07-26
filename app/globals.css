@@ -23,6 +23,7 @@ a:hover {
 
 .section {
   margin-bottom: 1.5em;
+  break-inside: avoid;
 }
 
 .profile-images {
@@ -44,6 +45,7 @@ a:hover {
 
 .video-grid a {
   display: block;
+  break-inside: avoid;
 }
 
 .video-grid img {
