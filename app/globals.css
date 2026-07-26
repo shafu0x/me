@@ -23,6 +23,7 @@ a:hover {
 
 .section {
   margin-bottom: 1.5em;
+  break-inside: avoid;
 }
 
 .profile-images {
@@ -44,9 +45,34 @@ a:hover {
 
 .video-grid a {
   display: block;
+  break-inside: avoid;
 }
 
 .video-grid img {
   width: 100%;
   display: block;
+}
+
+.download-pdf {
+  font-family: inherit;
+  font-size: inherit;
+  color: #0000ee;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.download-pdf:hover {
+  color: #000;
+}
+
+.download-pdf:disabled {
+  color: #666;
+  cursor: wait;
+}
+
+.download-pdf-error {
+  color: #c00;
 }
