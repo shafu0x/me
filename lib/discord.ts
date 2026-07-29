@@ -1,7 +1,8 @@
 "use server";
 
 import { after } from "next/server";
-import { siteUrl } from "@/lib/site";
+
+const DISCORD_AVATAR_URL = "https://www.shafu.me/pfp.jpg";
 
 export async function sendDiscordNotification(content: string): Promise<void> {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL?.trim();
@@ -14,7 +15,7 @@ export async function sendDiscordNotification(content: string): Promise<void> {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           content,
-          avatar_url: `${siteUrl}/pfp.jpg`,
+          avatar_url: DISCORD_AVATAR_URL,
         }),
       });
 
