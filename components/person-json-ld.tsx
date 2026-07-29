@@ -1,7 +1,7 @@
 import {
   fullName,
   jobTitle,
-  siteDescription,
+  siteIntroText,
   siteName,
   siteUrl,
   socialLinks,
@@ -15,7 +15,7 @@ export function PersonJsonLd() {
     alternateName: siteName,
     url: siteUrl,
     jobTitle,
-    description: siteDescription,
+    description: siteIntroText,
     image: `${siteUrl}/pfp.jpg`,
     sameAs: [socialLinks.twitter, socialLinks.github, socialLinks.linkedin],
     worksFor: {

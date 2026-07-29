@@ -1,7 +1,7 @@
 import { DownloadPdfButton } from "@/components/download-pdf-button";
 import { ProfileHeader } from "@/components/profile-header";
 import { TalkGrid } from "@/components/talk-grid";
-import { socialLinks } from "@/lib/site";
+import { siteIntro, socialLinks } from "@/lib/site";
 import { preconnect, prefetchDNS, preload } from "react-dom";
 
 export default function Home() {
@@ -18,9 +18,9 @@ export default function Home() {
         <div className="section">
           <h1>Sharif Elfouly (shafu)</h1>
           <br />
-          previously founding engineer at{" "}
-          <a href="https://merit.systems">Merit Systems</a> and machine learning
-          engineer. built Smart Contracts securing $1B+.
+          {siteIntro.lead}
+          <a href={siteIntro.merit.href}>{siteIntro.merit.label}</a>
+          {siteIntro.tail}
         </div>
 
         <div className="section">

@@ -4,8 +4,15 @@ export const fullName = "Sharif Elfouly";
 
 export const jobTitle = "Smart Contract Engineer";
 
-export const siteDescription =
-  "Sharif Elfouly (shafu) — smart contract engineer and founding engineer at Merit Systems. Built smart contracts securing $1B+. x402, agentic commerce, open source.";
+export const siteIntro = {
+  lead: "previously founding engineer at ",
+  merit: { href: "https://merit.systems", label: "Merit Systems" },
+  tail: " and machine learning engineer. built Smart Contracts securing $1B+.",
+} as const;
+
+export const siteIntroText = `${siteIntro.lead}${siteIntro.merit.label}${siteIntro.tail}`;
+
+export const ogBackgroundColor = "#CBC1BF";
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??

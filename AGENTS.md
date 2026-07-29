@@ -28,4 +28,8 @@ Personal resume site built with Next.js 16 App Router.
 
 - `NEXT_PUBLIC_SITE_URL` — optional override for metadata/canonical URLs; defaults to `https://shafu.me` in production
 
+## Before opening a PR
+
+Always run `pnpm check` (types, lint, format, knip, and build) and fix any failures before pushing or opening a pull request.
+
 <!-- END:nextjs-agent-rules -->
