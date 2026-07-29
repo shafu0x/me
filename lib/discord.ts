@@ -15,6 +15,7 @@ export async function sendDiscordNotification(content: string): Promise<void> {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           content,
+          username: "shafu.me",
           avatar_url: DISCORD_AVATAR_URL,
         }),
       });
