@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["app/**/*.{ts,tsx}", "postcss.config.mjs"],
+  "project": ["**/*.{ts,tsx}", "lib/**/*.ts"],
+  "ignoreDependencies": ["tailwindcss"]
+}

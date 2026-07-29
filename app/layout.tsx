@@ -1,10 +1,41 @@
-import type { Metadata } from "next";
-import { DeferredAnalytics } from "@/components/deferred-analytics";
+import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { PersonJsonLd } from "@/components/person-json-ld";
+import {
+  fullName,
+  siteDescription,
+  siteName,
+  siteUrl,
+} from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "shafu",
-  description: "Sharif Elfouly - smart contract engineer, founding engineer at Merit Systems",
+  metadataBase: new URL(siteUrl),
+  title: { default: siteName, template: `%s | ${siteName}` },
+  description: siteDescription,
+  authors: [{ name: fullName, url: siteUrl }],
+  alternates: { canonical: siteUrl },
+  icons: {
+    icon: "/pfp.jpg",
+    apple: "/pfp.jpg",
+  },
+  openGraph: {
+    title: siteName,
+    description: siteDescription,
+    url: siteUrl,
+    siteName,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: siteDescription,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -15,8 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <PersonJsonLd />
         {children}
-        <DeferredAnalytics />
+        <Analytics />
       </body>
     </html>
   );

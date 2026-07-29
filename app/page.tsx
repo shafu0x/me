@@ -1,58 +1,8 @@
-import { DeferredDownloadPdfButton } from "@/components/deferred-download-pdf-button";
+import { DownloadPdfButton } from "@/components/download-pdf-button";
+import { ProfileHeader } from "@/components/profile-header";
+import { TalkGrid } from "@/components/talk-grid";
+import { socialLinks } from "@/lib/site";
 import { preconnect, prefetchDNS, preload } from "react-dom";
-
-const TALKS = [
-  {
-    href: "https://www.youtube.com/watch?v=vVmyBfGqM7Q&t=3s",
-    img: "https://i.ytimg.com/vi/vVmyBfGqM7Q/hqdefault.jpg",
-    alt: "Autonomous Agentic Commerce: Micropayments, AgentCash, x402 & MPP",
-    title:
-      "Autonomous Agentic Commerce: Micropayments, AgentCash, x402 & MPP (Shoal Signal)",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=KQG-ouMf-ho",
-    img: "https://i.ytimg.com/vi/KQG-ouMf-ho/sddefault.jpg",
-    alt: "x402scan: The discovery layer for x402",
-    title: "x402scan: The discovery layer for x402 (Agentic Zero keynote)",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=ATkN_eHjehM",
-    img: "https://i.ytimg.com/vi/ATkN_eHjehM/maxresdefault.jpg",
-    alt: "x402, ERC-8004 and Co",
-    title: "x402, ERC-8004 and Co (Agents Unleashed Buenos Aires)",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=p3-xWjJ3qZ8",
-    img: "https://i.ytimg.com/vi/p3-xWjJ3qZ8/sddefault.jpg",
-    alt: "The Signal Podcast",
-    title: "The Signal Podcast: x402 Scan MCP (Edge & Node)",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=ByBjY05Xl6U",
-    img: "https://i.ytimg.com/vi/ByBjY05Xl6U/sddefault.jpg",
-    alt: "Agentic payments are the new normal",
-    title: "Agentic payments are the new normal (Openfort)",
-  },
-  {
-    href: "https://www.youtube.com/watch?v=zW2u-fRo_ek",
-    img: "https://i.ytimg.com/vi/zW2u-fRo_ek/sddefault.jpg",
-    alt: "x402 explained (payments unlock agents)",
-    title:
-      "x402 explained: payments unlock agents (Keeping Up with the Builders)",
-  },
-  {
-    href: "https://x.com/cryptosmiff/status/2039446564784263651",
-    img: "/cryptosmiff.png",
-    alt: "Agentic payments might be bigger than DeFi",
-    title: "Agentic payments might be bigger than DeFi (cryptosmiff)",
-  },
-  {
-    href: "https://slop.computer/shafu0x",
-    img: "/slop-computer-shafu0x.png",
-    alt: "Slop Computer episode with shafu0x",
-    title: "Slop Computer: shafu0x",
-  },
-] as const;
 
 export default function Home() {
   preconnect("https://i.ytimg.com");
@@ -61,48 +11,38 @@ export default function Home() {
 
   return (
     <>
-      <DeferredDownloadPdfButton />
+      <DownloadPdfButton />
       <main id="resume-content">
-        <div className="section">
-          <div className="profile-images">
-            <img
-              src="/pfp.jpg"
-              alt="shafu"
-              width={120}
-              height={120}
-              crossOrigin="anonymous"
-              className="profile-pfp"
-            />
-            <img
-              src="/speaking.png"
-              alt="Sharif speaking on stage"
-              width={120}
-              height={120}
-              crossOrigin="anonymous"
-              className="profile-photo"
-            />
-          </div>
-        </div>
+        <ProfileHeader />
 
         <div className="section">
-          I&apos;m shafu (Sharif Elfouly). previously founding engineer at{" "}
+          <h1>Sharif Elfouly (shafu)</h1>
+          <br />
+          previously founding engineer at{" "}
           <a href="https://merit.systems">Merit Systems</a> and machine learning
           engineer. built Smart Contracts securing $1B+.
         </div>
 
         <div className="section">
-          find me on <a href="https://x.com/shafu0x">twitter</a>,{" "}
-          <a href="https://github.com/shafu0x">github</a>,{" "}
-          <a href="https://linkedin.com/in/sharif-elfouly-975146142">
+          find me on{" "}
+          <a href={socialLinks.twitter} rel="me">
+            twitter
+          </a>
+          ,{" "}
+          <a href={socialLinks.github} rel="me">
+            github
+          </a>
+          ,{" "}
+          <a href={socialLinks.linkedin} rel="me">
             linkedin
           </a>
-          , <a href="mailto:shafu0x@gmail.com">shafu0x@gmail.com</a>
+          , <a href={socialLinks.email}>shafu0x@gmail.com</a>
         </div>
 
         <div className="section">
           ---
           <br />
-          <b>work</b>
+          <h2>work</h2>
           <br />
           <br />
           <b>Merit Systems</b> - founding engineer (2025-present, NYC)
@@ -123,27 +63,16 @@ export default function Home() {
         <div className="section">
           ---
           <br />
-          <b>talks &amp; podcasts</b>
+          <h2>talks &amp; podcasts</h2>
           <br />
           <br />
-          <div className="video-grid">
-            {TALKS.map((talk) => (
-              <a key={talk.href} href={talk.href}>
-                <img
-                  src={talk.img}
-                  alt={talk.alt}
-                  crossOrigin="anonymous"
-                />
-                {talk.title}
-              </a>
-            ))}
-          </div>
+          <TalkGrid />
         </div>
 
         <div className="section">
           ---
           <br />
-          <b>Push &amp; Pop</b> - my show on smart contract deep-dives
+          <h2>Push &amp; Pop</h2> - my show on smart contract deep-dives
           <br />
           <a href="https://www.youtube.com/@shafu0x">youtube.com/@shafu0x</a>
           <br />
@@ -155,7 +84,7 @@ export default function Home() {
         <div className="section">
           ---
           <br />
-          <b>open source</b>
+          <h2>open source</h2>
           <br />
           <br />
           <a href="https://github.com/shafu0x/awesome-smart-contracts">
@@ -187,7 +116,7 @@ export default function Home() {
         <div className="section">
           ---
           <br />
-          <b>press</b>
+          <h2>press</h2>
           <br />
           <br />
           <a href="https://www.inverse.com/the-smart-contract-engineer-building-open-sources-financial-future">
@@ -211,7 +140,7 @@ export default function Home() {
         <div className="section">
           ---
           <br />
-          <b>education</b>
+          <h2>education</h2>
           <br />
           <br />
           University of T&uuml;bingen - Master, Machine Learning (2018-2019,
