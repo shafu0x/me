@@ -32,6 +32,10 @@ a:hover {
   gap: 12px;
 }
 
+.profile-pfp {
+  image-rendering: pixelated;
+}
+
 .profile-photo {
   object-fit: cover;
 }
