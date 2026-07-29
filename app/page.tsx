@@ -1,7 +1,8 @@
 import { DownloadPdfButton } from "@/components/download-pdf-button";
 import { ProfileHeader } from "@/components/profile-header";
+import { SocialLinks } from "@/components/social-links";
 import { TalkGrid } from "@/components/talk-grid";
-import { siteIntro, socialLinks } from "@/lib/site";
+import { siteIntro } from "@/lib/site";
 import { preconnect, prefetchDNS, preload } from "react-dom";
 
 export default function Home() {
@@ -23,21 +24,7 @@ export default function Home() {
           {siteIntro.tail}
         </div>
 
-        <div className="section">
-          find me on{" "}
-          <a href={socialLinks.twitter} rel="me">
-            twitter
-          </a>
-          ,{" "}
-          <a href={socialLinks.github} rel="me">
-            github
-          </a>
-          ,{" "}
-          <a href={socialLinks.linkedin} rel="me">
-            linkedin
-          </a>
-          , <a href={socialLinks.email}>shafu0x@gmail.com</a>
-        </div>
+        <SocialLinks />
 
         <div className="section">
           ---

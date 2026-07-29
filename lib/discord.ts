@@ -1,0 +1,28 @@
+"use server";
+
+import { after } from "next/server";
+import { siteUrl } from "@/lib/site";
+
+export async function sendDiscordNotification(content: string): Promise<void> {
+  const webhookUrl = process.env.DISCORD_WEBHOOK_URL?.trim();
+  if (!webhookUrl) return;
+
+  after(async () => {
+    try {
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          content,
+          avatar_url: `${siteUrl}/pfp.jpg`,
+        }),
+      });
+
+      if (!response.ok) {
+        console.error(`Discord webhook failed with status ${response.status}`);
+      }
+    } catch (error) {
+      console.error("Discord webhook failed:", error);
+    }
+  });
+}
