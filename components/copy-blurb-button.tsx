@@ -1,7 +1,7 @@
 "use client";
 
 import { sendDiscordNotification } from "@/lib/discord";
-import { shareBlurbText } from "@/lib/site";
+import { shareBlurb } from "@/lib/site";
 import { useEffect, useState } from "react";
 
 export function CopyBlurbButton() {
@@ -15,7 +15,7 @@ export function CopyBlurbButton() {
 
   async function handleCopy() {
     try {
-      await navigator.clipboard.writeText(shareBlurbText);
+      await navigator.clipboard.writeText(shareBlurb.join("\n\n"));
       setCopied(true);
       void sendDiscordNotification("someone copied blurb");
     } catch {
