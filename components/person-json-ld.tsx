@@ -1,7 +1,7 @@
 import {
   fullName,
   jobTitle,
-  siteIntroText,
+  shareBlurbText,
   siteName,
   siteUrl,
   socialLinks,
@@ -15,13 +15,9 @@ export function PersonJsonLd() {
     alternateName: siteName,
     url: siteUrl,
     jobTitle,
-    description: siteIntroText,
+    description: shareBlurbText,
     image: `${siteUrl}/pfp.jpg`,
     sameAs: [socialLinks.twitter, socialLinks.github, socialLinks.linkedin],
-    worksFor: {
-      "@type": "Organization",
-      name: "Merit Systems",
-    },
   };
 
   return (

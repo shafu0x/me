@@ -1,8 +1,9 @@
+import { CopyBlurbButton } from "@/components/copy-blurb-button";
 import { DownloadPdfButton } from "@/components/download-pdf-button";
 import { ProfileHeader } from "@/components/profile-header";
 import { SocialLinks } from "@/components/social-links";
 import { TalkGrid } from "@/components/talk-grid";
-import { siteIntro } from "@/lib/site";
+import { shareBlurb } from "@/lib/site";
 import { preconnect, prefetchDNS, preload } from "react-dom";
 
 export default function Home() {
@@ -17,11 +18,21 @@ export default function Home() {
         <ProfileHeader />
 
         <div className="section">
-          <h1>Sharif Elfouly (shafu)</h1>
+          <h1>shafu</h1>
           <br />
-          {siteIntro.lead}
-          <a href={siteIntro.merit.href}>{siteIntro.merit.label}</a>
-          {siteIntro.tail}
+          {shareBlurb.map((sentence, i) => (
+            <span key={i}>
+              {sentence}
+              {i < shareBlurb.length - 1 ? (
+                <>
+                  <br />
+                  <br />
+                </>
+              ) : null}
+            </span>
+          ))}
+          <br />
+          <CopyBlurbButton />
         </div>
 
         <SocialLinks />
@@ -32,7 +43,7 @@ export default function Home() {
           <h2>work</h2>
           <br />
           <br />
-          <b>Merit Systems</b> - founding engineer (2025-present, NYC)
+          <b>Merit Systems</b> - previously, founding engineer (NYC)
           <br />
           <b>Venice AI</b> - smart contract engineer
           <br />

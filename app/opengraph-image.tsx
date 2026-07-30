@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { ogBackgroundColor, siteIntroText, siteName } from "@/lib/site";
+import { ogBackgroundColor, shareBlurb, siteName } from "@/lib/site";
 
 export const alt = siteName;
 export const size = { width: 1200, height: 630 };
@@ -64,7 +64,7 @@ export default async function OpenGraphImage() {
             color: "#333",
           }}
         >
-          {siteIntroText}
+          {shareBlurb[0]}
         </div>
       </div>
     </div>,
