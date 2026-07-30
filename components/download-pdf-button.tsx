@@ -35,7 +35,7 @@ export function DownloadPdfButton() {
           .from(element)
           .save();
 
-        void sendDiscordNotification("someone downloaded pdf");
+        void sendDiscordNotification("downloaded pdf");
       } catch {
         setError("Failed to generate PDF. Please try again.");
       }

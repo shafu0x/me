@@ -17,7 +17,7 @@ export function CopyBlurbButton() {
     try {
       await navigator.clipboard.writeText(shareBlurb.join("\n\n"));
       setCopied(true);
-      void sendDiscordNotification("someone copied blurb");
+      void sendDiscordNotification("copied blurb");
     } catch {
       setCopied(false);
     }
