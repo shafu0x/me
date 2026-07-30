@@ -11,7 +11,7 @@ export function SocialLinks() {
         href={socialLinks.twitter}
         rel="me"
         onClick={() => {
-          void sendDiscordNotification("someone clicked twitter");
+          void sendDiscordNotification("clicked twitter");
         }}
       >
         twitter
@@ -21,7 +21,7 @@ export function SocialLinks() {
         href={socialLinks.github}
         rel="me"
         onClick={() => {
-          void sendDiscordNotification("someone clicked github");
+          void sendDiscordNotification("clicked github");
         }}
       >
         github
@@ -31,7 +31,7 @@ export function SocialLinks() {
         href={socialLinks.linkedin}
         rel="me"
         onClick={() => {
-          void sendDiscordNotification("someone clicked linkedin");
+          void sendDiscordNotification("clicked linkedin");
         }}
       >
         linkedin
@@ -40,7 +40,7 @@ export function SocialLinks() {
       <a
         href={socialLinks.email}
         onClick={() => {
-          void sendDiscordNotification("someone clicked email");
+          void sendDiscordNotification("clicked email");
         }}
       >
         shafu0x@gmail.com

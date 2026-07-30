@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { PersonJsonLd } from "@/components/person-json-ld";
-import { fullName, siteIntroText, siteName, siteUrl } from "@/lib/site";
+import { fullName, shareBlurbText, siteName, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: siteName, template: `%s | ${siteName}` },
-  description: siteIntroText,
+  description: shareBlurbText,
   authors: [{ name: fullName, url: siteUrl }],
   alternates: { canonical: siteUrl },
   icons: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: siteName,
-    description: siteIntroText,
+    description: shareBlurbText,
     url: siteUrl,
     siteName,
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteName,
-    description: siteIntroText,
+    description: shareBlurbText,
   },
 };
 
