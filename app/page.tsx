@@ -1,9 +1,9 @@
 import { CopyBlurbButton } from "@/components/copy-blurb-button";
 import { DownloadPdfButton } from "@/components/download-pdf-button";
 import { ProfileHeader } from "@/components/profile-header";
+import { ShareBlurb } from "@/components/share-blurb";
 import { SocialLinks } from "@/components/social-links";
 import { TalkGrid } from "@/components/talk-grid";
-import { shareBlurb } from "@/lib/site";
 import { preconnect, prefetchDNS, preload } from "react-dom";
 
 export default function Home() {
@@ -20,17 +20,7 @@ export default function Home() {
         <div className="section">
           <h1>shafu</h1>
           <br />
-          {shareBlurb.map((sentence, i) => (
-            <span key={i}>
-              {sentence}
-              {i < shareBlurb.length - 1 ? (
-                <>
-                  <br />
-                  <br />
-                </>
-              ) : null}
-            </span>
-          ))}
+          <ShareBlurb />
           <br />
           <CopyBlurbButton />
         </div>
