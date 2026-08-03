@@ -4,7 +4,7 @@ export const fullName = "Sharif Elfouly";
 
 export const jobTitle = "Software Engineer";
 
-type BlurbLink = { text: string; href: string; notifyOnClick?: string };
+type BlurbLink = { text: string; href: string };
 type BlurbPart = string | BlurbLink;
 type BlurbContent = string | readonly BlurbPart[];
 
@@ -32,31 +32,26 @@ export const shareBlurb: readonly ShareBlurbEntry[] = [
       {
         text: "Merit Systems",
         href: "https://merit.systems",
-        notifyOnClick: "clicked Merit Systems",
       },
       ", smart contract engineer at ",
       {
         text: "Venice AI",
         href: "https://x.com/AskVenice",
-        notifyOnClick: "clicked Venice AI",
       },
       " and ",
       {
         text: "DYAD",
         href: "https://defillama.com/protocol/dyad",
-        notifyOnClick: "clicked DYAD",
       },
       ", co-founded a fintech startup in Germany, and worked as a machine learning engineer at ",
       {
         text: "EnBW",
         href: "https://en.wikipedia.org/wiki/EnBW",
-        notifyOnClick: "clicked EnBW",
       },
       " and ",
       {
         text: "vialytics",
         href: "https://www.vialytics.com/",
-        notifyOnClick: "clicked vialytics",
       },
       ".",
     ],
@@ -68,7 +63,6 @@ export const shareBlurb: readonly ShareBlurbEntry[] = [
       {
         text: "$1 billion onchain",
         href: "https://defillama.com/protocol/venice?groupBy=yearly",
-        notifyOnClick: "clicked $1 billion onchain",
       },
       ", he hosts Push & Pop (60+ episodes on protocol deep-dives), and speaks regularly on AI agents, crypto, and payments.",
     ],

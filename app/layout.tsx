@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { ClickNotifier } from "@/components/click-notifier";
 import { PersonJsonLd } from "@/components/person-json-ld";
 import { fullName, shareBlurbText, siteName, siteUrl } from "@/lib/site";
 import "./globals.css";
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body>
         <PersonJsonLd />
         {children}
+        <ClickNotifier />
         <Analytics />
       </body>
     </html>

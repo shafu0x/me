@@ -1,50 +1,21 @@
-"use client";
-
-import { sendDiscordNotification } from "@/lib/discord";
 import { socialLinks } from "@/lib/site";
 
 export function SocialLinks() {
   return (
     <div className="section">
       find me on{" "}
-      <a
-        href={socialLinks.twitter}
-        rel="me"
-        onClick={() => {
-          void sendDiscordNotification("clicked twitter");
-        }}
-      >
+      <a href={socialLinks.twitter} rel="me">
         twitter
       </a>
       ,{" "}
-      <a
-        href={socialLinks.github}
-        rel="me"
-        onClick={() => {
-          void sendDiscordNotification("clicked github");
-        }}
-      >
+      <a href={socialLinks.github} rel="me">
         github
       </a>
       ,{" "}
-      <a
-        href={socialLinks.linkedin}
-        rel="me"
-        onClick={() => {
-          void sendDiscordNotification("clicked linkedin");
-        }}
-      >
+      <a href={socialLinks.linkedin} rel="me">
         linkedin
       </a>
-      ,{" "}
-      <a
-        href={socialLinks.email}
-        onClick={() => {
-          void sendDiscordNotification("clicked email");
-        }}
-      >
-        shafu0x@gmail.com
-      </a>
+      , <a href={socialLinks.email}>shafu0x@gmail.com</a>
     </div>
   );
 }

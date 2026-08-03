@@ -1,6 +1,5 @@
 "use client";
 
-import { sendDiscordNotification } from "@/lib/discord";
 import { useState, useTransition } from "react";
 
 function preloadPdfLib() {
@@ -34,8 +33,6 @@ export function DownloadPdfButton() {
           })
           .from(element)
           .save();
-
-        void sendDiscordNotification("downloaded pdf");
       } catch {
         setError("Failed to generate PDF. Please try again.");
       }

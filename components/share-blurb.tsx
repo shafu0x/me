@@ -1,6 +1,3 @@
-"use client";
-
-import { sendDiscordNotification } from "@/lib/discord";
 import { shareBlurb, type ShareBlurbEntry } from "@/lib/site";
 
 function renderContent(content: ShareBlurbEntry["content"]) {
@@ -12,19 +9,7 @@ function renderContent(content: ShareBlurbEntry["content"]) {
     typeof part === "string" ? (
       part
     ) : (
-      <a
-        key={i}
-        href={part.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={
-          part.notifyOnClick
-            ? () => {
-                void sendDiscordNotification(part.notifyOnClick!);
-              }
-            : undefined
-        }
-      >
+      <a key={i} href={part.href} target="_blank" rel="noopener noreferrer">
         {part.text}
       </a>
     ),
