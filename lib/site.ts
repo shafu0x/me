@@ -4,7 +4,7 @@ export const fullName = "Sharif Elfouly";
 
 export const jobTitle = "Software Engineer";
 
-type BlurbLink = { text: string; href: string };
+type BlurbLink = { text: string; href: string; notifyOnClick?: string };
 type BlurbPart = string | BlurbLink;
 type BlurbContent = string | readonly BlurbPart[];
 
@@ -29,22 +29,49 @@ export const shareBlurb: readonly ShareBlurbEntry[] = [
   {
     content: [
       "He was founding engineer at ",
-      { text: "Merit Systems", href: "https://merit.systems" },
+      {
+        text: "Merit Systems",
+        href: "https://merit.systems",
+        notifyOnClick: "clicked Merit Systems",
+      },
       ", smart contract engineer at ",
-      { text: "Venice AI", href: "https://x.com/AskVenice" },
+      {
+        text: "Venice AI",
+        href: "https://x.com/AskVenice",
+        notifyOnClick: "clicked Venice AI",
+      },
       " and ",
-      { text: "DYAD", href: "https://defillama.com/protocol/dyad" },
+      {
+        text: "DYAD",
+        href: "https://defillama.com/protocol/dyad",
+        notifyOnClick: "clicked DYAD",
+      },
       ", co-founded a fintech startup in Germany, and worked as a machine learning engineer at ",
-      { text: "EnBW", href: "https://en.wikipedia.org/wiki/EnBW" },
+      {
+        text: "EnBW",
+        href: "https://en.wikipedia.org/wiki/EnBW",
+        notifyOnClick: "clicked EnBW",
+      },
       " and ",
-      { text: "vialytics", href: "https://www.vialytics.com/" },
+      {
+        text: "vialytics",
+        href: "https://www.vialytics.com/",
+        notifyOnClick: "clicked vialytics",
+      },
       ".",
     ],
     shownOnWebsite: true,
   },
   {
-    content:
-      "His smart contracts have secured over $1 billion onchain, he hosts Push & Pop (60+ episodes on protocol deep-dives), and speaks regularly on AI agents, crypto, and payments.",
+    content: [
+      "His smart contracts have secured over ",
+      {
+        text: "$1 billion onchain",
+        href: "https://defillama.com/protocol/venice?groupBy=yearly",
+        notifyOnClick: "clicked $1 billion onchain",
+      },
+      ", he hosts Push & Pop (60+ episodes on protocol deep-dives), and speaks regularly on AI agents, crypto, and payments.",
+    ],
     shownOnWebsite: true,
   },
   {
