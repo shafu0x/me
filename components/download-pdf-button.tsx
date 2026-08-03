@@ -20,6 +20,9 @@ export function DownloadPdfButton() {
     setError(null);
 
     startTransition(async () => {
+      const exclude = document.getElementById("pdf-exclude");
+      if (exclude) exclude.style.display = "none";
+
       try {
         const html2pdf = (await import("html2pdf.js")).default;
 
@@ -35,12 +38,14 @@ export function DownloadPdfButton() {
           .save();
       } catch {
         setError("Failed to generate PDF. Please try again.");
+      } finally {
+        if (exclude) exclude.style.display = "";
       }
     });
   }
 
   return (
-    <div className="section">
+    <>
       <button
         type="button"
         className="cursor-pointer border-0 bg-transparent p-0 font-[inherit] text-[length:inherit] text-[#0000ee] underline hover:text-black disabled:cursor-wait disabled:text-[#666]"
@@ -52,6 +57,6 @@ export function DownloadPdfButton() {
         Download PDF
       </button>
       {error ? <span className="text-[#c00]"> {error}</span> : null}
-    </div>
+    </>
   );
 }

@@ -13,7 +13,6 @@ export default function Home() {
 
   return (
     <>
-      <DownloadPdfButton />
       <main id="resume-content">
         <ProfileHeader />
 
@@ -21,11 +20,12 @@ export default function Home() {
           <h1>shafu</h1>
           <br />
           <ShareBlurb />
-          <br />
-          <CopyBlurbButton />
         </div>
 
         <SocialLinks />
+        <div id="pdf-exclude" className="section">
+          <CopyBlurbButton /> <DownloadPdfButton />
+        </div>
 
         <div className="section">
           ---
@@ -60,8 +60,7 @@ export default function Home() {
         <div className="section">
           ---
           <br />
-          <h2>Push &amp; Pop</h2> - my show on smart contract deep-dives
-          <br />
+          <h2>Push &amp; Pop</h2> - my show on smart contract deep-dives{" "}
           <a href="https://www.youtube.com/@shafu0x">youtube.com/@shafu0x</a>
           <br />
           <br />
@@ -83,11 +82,8 @@ export default function Home() {
           <a href="https://github.com/Merit-Systems/x402scan">x402scan</a> -
           x402 ecosystem explorer
           <br />
-          <a href="https://github.com/shafu0x/evm-from-scratch-book">
-            evm-from-scratch-book
-          </a>{" "}
-          - build the EVM from scratch &mdash;{" "}
-          <a href="https://www.evm-from-scratch.app">evm-from-scratch.app</a>
+          <a href="https://www.evm-from-scratch.app">evm-from-scratch-book</a> -
+          build the EVM from scratch
           <br />
           <a href="https://github.com/shafu0x/MicroStable">MicroStable</a> -
           most simple design of a stablecoin
@@ -117,12 +113,6 @@ export default function Home() {
             &quot;Why Tokenization Isn&apos;t a Tech Problem&quot;
           </a>{" "}
           &mdash; Village Voice (2025)
-          <br />
-          <a href="https://www.devx.com/enterprise-zone/smart-contracts/">
-            &quot;Code That Holds Millions: Philosophy for Smart Contracts That
-            Survive&quot;
-          </a>{" "}
-          &mdash; DevX (2025)
         </div>
 
         <div className="section">
@@ -131,8 +121,10 @@ export default function Home() {
           <h2>education</h2>
           <br />
           <br />
-          University of T&uuml;bingen - Master, Machine Learning (2018-2019,
-          dropped out)
+          <a href="https://en.wikipedia.org/wiki/University_of_T%C3%BCbingen">
+            University of T&uuml;bingen
+          </a>{" "}
+          - Master, Machine Learning (2018-2019, dropped out)
           <br />
           Westf&auml;lische Hochschule - B.Sc., Computer Science (2014-2017)
         </div>

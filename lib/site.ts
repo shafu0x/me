@@ -23,7 +23,7 @@ const paragraphToPlainText = (content: BlurbContent): string =>
 export const shareBlurb: readonly ShareBlurbEntry[] = [
   {
     content:
-      "Sharif Elfouly (shafu) is a software engineer based in New York, building at the intersection of AI, agents, crypto, and payments.",
+      "Sharif Elfouly (shafu) is a software engineer based in New York, building in AI, agents, crypto, and payments.",
     shownOnWebsite: true,
   },
   {
@@ -64,7 +64,7 @@ export const shareBlurb: readonly ShareBlurbEntry[] = [
         text: "$1 billion onchain",
         href: "https://defillama.com/protocol/venice?groupBy=yearly",
       },
-      ", he hosts Push & Pop (60+ episodes on protocol deep-dives), and speaks regularly on AI agents, crypto, and payments.",
+      ", he hosts Push & Pop, and speaks regularly on AI agents, crypto, and payments.",
     ],
     shownOnWebsite: true,
   },
@@ -88,6 +88,8 @@ export const shareBlurbLeadText = paragraphToPlainText(
 );
 
 export const ogBackgroundColor = "#CBC1BF";
+
+export const pfpBackgroundColor = "#CBC1C0";
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??

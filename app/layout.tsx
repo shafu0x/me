@@ -11,10 +11,6 @@ export const metadata: Metadata = {
   description: shareBlurbText,
   authors: [{ name: fullName, url: siteUrl }],
   alternates: { canonical: siteUrl },
-  icons: {
-    icon: "/pfp.jpg",
-    apple: "/pfp.jpg",
-  },
   openGraph: {
     title: siteName,
     description: shareBlurbText,

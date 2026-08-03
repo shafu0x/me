@@ -46,20 +46,3 @@ a:hover {
 .profile-photo {
   object-fit: cover;
 }
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 12px;
-  margin-top: 8px;
-}
-
-.video-grid a {
-  display: block;
-  break-inside: avoid;
-}
-
-.video-grid img {
-  width: 100%;
-  display: block;
-}
