@@ -33,7 +33,9 @@ export default function Home() {
           <h2>work</h2>
           <br />
           <br />
-          <b>Merit Systems</b> - previously, founding engineer (NYC)
+          <b>Circle</b> - staff software engineer (NYC)
+          <br />
+          <b>Merit Systems</b> - founding engineer (NYC)
           <br />
           <b>Venice AI</b> - smart contract engineer
           <br />

@@ -2,7 +2,7 @@ export const siteName = "shafu";
 
 export const fullName = "Sharif Elfouly";
 
-export const jobTitle = "Software Engineer";
+export const jobTitle = "Staff Software Engineer";
 
 type BlurbLink = { text: string; href: string };
 type BlurbPart = string | BlurbLink;
@@ -22,8 +22,14 @@ const paragraphToPlainText = (content: BlurbContent): string =>
 
 export const shareBlurb: readonly ShareBlurbEntry[] = [
   {
-    content:
-      "Sharif Elfouly (shafu) is a software engineer based in New York, building in AI, agents, crypto, and payments.",
+    content: [
+      "Sharif Elfouly (shafu) is a staff software engineer at ",
+      {
+        text: "Circle",
+        href: "https://en.wikipedia.org/wiki/Circle_Internet_Group",
+      },
+      ", based in New York, building in AI, agents, crypto, and payments.",
+    ],
     shownOnWebsite: true,
   },
   {
