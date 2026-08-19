@@ -23,7 +23,7 @@ const paragraphToPlainText = (content: BlurbContent): string =>
 export const shareBlurb: readonly ShareBlurbEntry[] = [
   {
     content: [
-      "Sharif Elfouly (shafu) is a staff software engineer at ",
+      "Sharif Elfouly (shafu) recently joined ",
       {
         text: "Circle",
         href: "https://en.wikipedia.org/wiki/Circle_Internet_Group",
