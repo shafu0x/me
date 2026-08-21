@@ -8,6 +8,13 @@ export type Talk = {
 
 export const TALKS = [
   {
+    href: "https://x.com/therollupco/status/2090563319937773982",
+    img: "/the-rollup-ai-agents.png",
+    alt: "Shafu Elfouly Talks AI Agents and Money on The Rollup",
+    title: "AI Agents and Money",
+    subtitle: "The Rollup",
+  },
+  {
     href: "https://www.youtube.com/watch?v=vVmyBfGqM7Q&t=3s",
     img: "https://i.ytimg.com/vi/vVmyBfGqM7Q/hqdefault.jpg",
     alt: "Autonomous Agentic Commerce: Micropayments, AgentCash, x402 & MPP",
